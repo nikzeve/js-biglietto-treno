@@ -1,15 +1,72 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://kit.fontawesome.com/ce28035c26.js" crossorigin="anonymous"></script>
+        <title>Biglietti Treno</title>
         <link rel="stylesheet" href="style.css">
-        <title>Biglietti treno</title>
     </head>
     <body>
+        <div id="contenitore">
 
+            <!-- inizio header -->
+            <header>
+
+            <div id="riga1">
+                <p>Train</p>
+            </div>
+
+            <div id="riga2">
+                <ul id="menu">
+                    <li>
+                        <p>HOME</p>
+                    </li>
+                    <li>
+                        <p>CHI SIAMO</p>
+                    </li>
+                    <li>
+                        <p>ACQUISTA</p>
+                    </li>
+                    <li>
+                        <p>CONTATTACI</p>
+                    </li>
+                </ul>
+
+            </div>
+
+            </header>
+            <!-- fine header -->
+
+            <div id="wrapper">
+
+                <aside>
+                    <h3>INFORMAZIONI</h3>
+                    <br>
+                    <p>Km tratta:<span id="chilometri"></span></p>
+                    <p>Età passegero: <span id="eta"></span></p>
+                </aside>
+
+                <main>
+                    <h2>DETTAGLI PREZZO</h2>
+                    <br>
+                    <p>Prezzo totale: <span id="prezzo-normale"></span></p>
+                    <p>Prezzo scontato: <span id="prezzo-scontato"></span></p>
+
+                </main>
+
+                <aside>
+                    <h3>ACQUISTA</h3>
+                    <br>
+                    <p>Prezzo Totale: <span id="prezzo-finale"></span></p>
+                </aside>
+
+
+            </div>
+
+        </div>
+
+        <footer>
+            <p>Pagina realizzata da Nicola</p>
+            <hr>
+        </footer>
     <script src="main.js" charset="utf-8"></script>
     </body>
 </html>

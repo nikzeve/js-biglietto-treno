@@ -15,15 +15,31 @@ console.log('Prezzo biglietto:' + ' ' + prezzo_normale_biglietto);
 if (eta < 18) {
 
     var prezzo_biglietto_minorenne = (prezzo_normale_biglietto - ((prezzo_normale_biglietto/100)*20));
-    console.log(prezzo_biglietto_minorenne);
+    console.log('Prezzo scontato minorenne:' + ' ' + prezzo_biglietto_minorenne);
+    document.getElementById('prezzo-scontato').innerHTML = prezzo_biglietto_minorenne + ' ' + '€';
+    document.getElementById('prezzo-finale').innerHTML = prezzo_biglietto_minorenne + ' ' + '€';
+
 
 } else if (eta >= 65) {
 
         var prezzo_biglietto_over = (prezzo_normale_biglietto - ((prezzo_normale_biglietto/100)*40));
-        console.log(prezzo_biglietto_over);
+        console.log('Prezzo biglietto over:' + ' ' + prezzo_biglietto_over);
+        document.getElementById('prezzo-scontato').innerHTML =  prezzo_biglietto_over + ' ' + '€';
+        document.getElementById('prezzo-finale').innerHTML =  prezzo_biglietto_over + ' ' + '€';
+
 
 } else {
 
-    console.log(prezzo_normale_biglietto);
+    console.log('Prezzo del biglietto:' + ' ' + prezzo_normale_biglietto);
+    document.getElementById('prezzo-scontato').innerHTML = prezzo_normale_biglietto + ' ' + '€';
+    document.getElementById('prezzo-finale').innerHTML = prezzo_normale_biglietto + ' ' + '€';
+
 
 }
+
+
+document.getElementById('chilometri').innerHTML = chilometri + ' ' + 'km';
+
+document.getElementById('eta').innerHTML = eta + ' ' + 'anni';
+
+document.getElementById('prezzo-normale').innerHTML = prezzo_normale_biglietto + ' ' + '€';
